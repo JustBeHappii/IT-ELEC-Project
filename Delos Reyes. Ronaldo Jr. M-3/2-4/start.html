@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create a Fundraiser</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background-color: #006D5B;
+    }
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+      max-height: 200px;
+    }
+    button {
+      background-color: #006D5B;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: transparent;
+      color: #006D5B;
+    }
+    h1{
+      color: pink;
+    }
+    .form-1{
+        position: relative;
+        top: 120px;
+    }
+    .title-1{
+        position: relative;
+        top: 120px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;" class="title-1">Create a Fundraiser</h1>
+  <form class="form-1" id="form-1" onsubmit="return Continue()">
+    <label for="title">Fundraiser Title</label>
+    <input type="text" id="title" name="title" placeholder="E.g. Help my dog get surgery" required>
+
+    <label for="category">Category</label>
+    <select id="category" name="category" required>
+      <option value="">Select a category</option>
+      <option value="medical">Medical</option>
+      <option value="education">Education</option>
+      <option value="emergency">Emergency</option>
+      <option value="nonprofit">Nonprofit</option>
+      <option value="memorial">Memorial</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="location">Location</label>
+    <input type="text" id="location" name="location" placeholder="City, State or Country" required>
+
+    <label for="description">Fundraiser Description</label>
+    <textarea id="description" name="description" placeholder="Explain why you're raising funds..." required></textarea>
+
+    <button class="btn-submit" type="submit">Continue</button>
+  </form>
+
+<script>
+  function Continue() {
+    window.location.href = "main.html";
+    alert("Your fundraiser has been created successfully!");
+    return false;
+  }
+</script>
+</body>
+</html>

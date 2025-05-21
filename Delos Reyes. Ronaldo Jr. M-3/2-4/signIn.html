@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create a Fundraiser</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 20px;
+      background-color: #006D5B;
+    }
+    form {
+        position: relative;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      top: 120px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+      max-height: 200px;
+    }
+    button {
+      background-color: #006D5B;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: transparent;
+      color: #006D5B;
+    }
+    h1{
+      color: pink;
+      position: relative;
+
+    }
+    h2{
+        font-size: x-large;
+    }
+    .signIn-2{
+        position: relative;
+        top: 110px;
+    }
+    .login{
+        position: relative;
+        padding: 25px;
+    }
+    .google{
+        position: relative;
+        height: 80px;
+        width: 80px;
+        margin-right: 50px;
+        bottom: 10px;
+        border-radius: 20px;
+    }
+    .facebook{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin-left: 35px;
+        border-radius: 20px;
+    }
+    .email{
+        position: relative;
+        height: 100px;
+        width: 100px;
+        margin-left: 75px;
+        border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;" class="signIn-2">Sign In</h1>
+  <form id="login-form">
+    <label for="title">E-Mail</label>
+    <input type="text" id="email" name="email" required>
+
+    <label for="location">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Continue</button>
+    <br>
+    <br>
+     <hr>
+    <center>
+        <h2 class="login-method">Log-In Methods</h2>
+    </center>
+
+
+    <div class="login">
+        <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fpli%3D1&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-149520319%3A1747183454753766">
+           <img src="C:\Users\LAB2\Downloads\Delos Reyes. Ronaldo Jr. M\2-4\google-icon.avif" alt="" class="google">
+        </a>
+        <a href="https://www.facebook.com/login.php/">
+            <img src="C:\Users\LAB2\Downloads\Delos Reyes. Ronaldo Jr. M\2-4\facebook-icon.avif" alt="" class="facebook">
+        </a>
+
+        <a href="#e-mail">
+            <img src="C:\Users\LAB2\Downloads\Delos Reyes. Ronaldo Jr. M\2-4\email-logo.jpg" alt="" class="email">
+        </a>
+    </div>
+  </form>
+
+  <script>
+    const form = document.getElementById('login-form');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+
+    form.addEventListener('submit', function(event){
+        event.preventDefault();
+        const validCredentials = [
+            {email: 'user1', password: 'password123'}
+        ];
+        
+        for (const credential of validCredentials){
+            if (credential.email === email.value && credential.password === password.value){
+                window.location.href = 'main2.html';
+                alert('Welcome to FundUnite!')
+            } else{
+                alert('Invalid Username or Password');
+            }
+        }
+    });
+  </script>
+</body>
+</html>

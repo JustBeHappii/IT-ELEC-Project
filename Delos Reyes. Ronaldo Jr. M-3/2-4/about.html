@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<style>
+      .group-1{
+        position: relative;
+        top: 90px;
+    }
+    h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .image-1{
+        border-radius: 30px;
+    }
+        .btn:hover{
+        outline: none;
+        background-color: #B3D9D9;
+    }
+    .nav-link{
+        position: relative;
+        color: black !important;
+        font-weight: bold !important;
+        right: 20px;
+    }
+    .nav-item{
+        position: relative;
+        padding-left: 40px;
+        right: 200px;
+    }
+    .nav-icon{
+        width: 90px;
+        height: 50px;
+    }
+      .nav-2{
+        position: relative;
+        left: 950px;
+    }
+    .navbar-brand{
+        position: relative;
+        left: 870px;
+    }
+    .Intro{
+        position: relative;
+        top: 40px;
+        color: lightpink;
+    }
+    .Sub-Intro{
+        position: relative;
+        top: 20px;
+        font-size: 100px;
+        color: lightpink;
+    }
+    .btn-click{
+        background-color: lightpink;
+        border-radius: 25px;
+        width: 280px;
+        font-size: 25px;
+        border: none;
+        position: relative;
+        top: 50px;
+        font-weight: bolder;
+        color: black;
+        height: 60px;
+    }
+    .btn-click:hover{
+        border-radius: 25px;
+        width: 280px;
+        font-size: 25px;
+        border: none;
+        position: relative;
+        top: 50px;
+        font-weight: bolder;
+        color: lightpink;
+        height: 60px;
+        background-color: transparent;
+    }
+    .dropdown-menu{
+        background-color: #B3D9D9;
+    }
+    .sentence{
+        position: relative;
+        top: 150px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .pic-1{
+        position: relative;
+        right: 250px;
+        top: 150px  ;
+    }
+    .learnMore{
+        background-color: pink;
+        border-radius: 10px;
+        color: #006D5B;
+        border-color: transparent;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        height: 50px;
+        width: 150px;
+    }
+        .learnMore:hover{
+        background-color: transparent;
+        border-radius: 20px;
+        border-color: transparent;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .sentence-2{
+        position: relative;
+        left: 1030px;
+        bottom: 250px;
+    }
+</style>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: lightpink;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="main.html">
+            <img class="nav-icon" src="Fundraising-Icon.png" alt="Icon">FundUnite
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fundraise &nbsp;
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" onclick="fundraise()">Fundraising List</a></li>
+                  <li><a class="dropdown-item" href="#">Fundraising Ideas</a></li>
+                  <li><a class="dropdown-item" href="#">Charity Fundraising</a></li>
+                  <li><a class="dropdown-item" href="#">Team Fundraising</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Donate &nbsp;
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Crisis Relief</a></li>
+                  <li><a class="dropdown-item" href="#">Categories</a></li>
+                  <li><a class="dropdown-item" href="#">Social Impact Funds</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About FundUnite</a></li>
+                  <li><a class="dropdown-item" href="#">Help Center</a></li>
+                  <li><a class="dropdown-item" href="#">How FundUnite Works</a></li>
+                </ul>
+              </li>
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" onclick="signIn()">Sign In</a>
+                </li>
+              </ul>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn" type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="position: relative; bottom: 3px;">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+              <script>
+          function goToStart(){
+            window.location.href = "start.html";
+          }
+          function fundraise(){
+            window.location.href = "fundraise.html";
+          }
+          function signIn(){
+            window.location.href = "signIn.html";
+          }
+        </script>
+    <center>
+        <div class="group-1">
+            <h1 class="word-1">Helping People for a Better Future</h1>
+            <img src="C:\Users\LAB2\Downloads\Delos Reyes. Ronaldo Jr. M\2-4\campaigns-good-for-fundraising.jpg" alt="" class="image-1">
+        </div>
+        <div class="sentence">
+            <h5>
+                Since its launch in 2010, GoFundMe has been committed to helping people help each other. <br> <br>
+
+                FundUnite is the next evolution in nonprofit fundraising, combining Classy powerful software with FundUnite scale and intelligence, 
+                ensuring organizations have even more opportunities to inspire giving and drive impact.
+                <br>
+                <br>
+                <br>
+            </h5>            
+        </div>
+
+        <div class="pic-1">
+            <img src="C:\Users\LAB2\Downloads\Delos Reyes. Ronaldo Jr. M\2-4\donations.jpg" alt="" style="border-radius: 50px;">
+        </div>
+    </center>
+            <div class="sentence-2">
+            <h6>Want to know more about Fundraising or FundUnite?</h6> <br>
+            <h6>Learn more about the process of starting a GoFundMe, tips and tricks, and see examples of fundraisers.</h6> <br>
+            <button class="learnMore">Learn More</button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+<footer class="footer mt-auto py-4" style="background: linear-gradient(90deg, #ffb6c1 0%, #ffe4ec 100%);">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <img src="Fundraising-Icon.png" alt="FundUnite Logo" style="height: 50px; border-radius: 10px;">
+                <span class="ms-2 fw-bold" style="font-size: 1.3rem; color: #d63384;">FundUnite</span>
+            </div>
+            <div class="col-md-4 text-center mb-3 mb-md-0">
+                <p class="mb-1" style="color: #6c757d;">© 2025 FundUnite. All rights reserved.</p>
+                <p class="mb-0" style="color: #6c757d;">Developed By: <span class="fw-semibold" style="color: #d63384;">Ronaldo M. Delos Reyes Jr.</span></p>
+            </div>
+            
+            <div class="col-md-4 text-center text-md-end">
+                <a href="#" class="text-decoration-none me-3" title="Facebook" style="color: #d63384;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M8.94 8.5H10.5V7H8.94V6.25c0-.36.09-.61.56-.61H10.5V4.5H9.5c-1.1 0-1.5.54-1.5 1.5V7H7v1.5h1v4h1.5v-4z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-decoration-none me-3" title="Twitter" style="color: #d63384;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.009-.422A6.68 6.68 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.084.797A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115c-.211 0-.417-.021-.616-.061a3.293 3.293 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-decoration-none" title="Instagram" style="color: #d63384;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 3c1.657 0 1.85.006 2.502.036.651.03 1.003.14 1.237.23.27.1.463.22.666.423.203.203.323.396.423.666.09.234.2.586.23 1.237C12.994 6.15 13 6.343 13 8c0 1.657-.006 1.85-.036 2.502-.03.651-.14 1.003-.23 1.237a1.68 1.68 0 0 1-.423.666 1.68 1.68 0 0 1-.666.423c-.234.09-.586.2-1.237.23C9.85 12.994 9.657 13 8 13c-1.657 0-1.85-.006-2.502-.036-.651-.03-1.003-.14-1.237-.23a1.68 1.68 0 0 1-.666-.423 1.68 1.68 0 0 1-.423-.666c-.09-.234-.2-.586-.23-1.237C3.006 9.85 3 9.657 3 8c0-1.657.006-1.85.036-2.502.03-.651.14-1.003.23-1.237.1-.27.22-.463.423-.666.203-.203.396-.323.666-.423.234-.09.586-.2 1.237-.23C6.15 3.006 6.343 3 8 3zm0-1C6.326 2 6.102 2.007 5.354 2.037c-.75.03-1.262.14-1.71.29a3.68 3.68 0 0 0-1.313.832A3.68 3.68 0 0 0 2.037 5.354c-.15.448-.26.96-.29 1.71C2.007 6.102 2 6.326 2 8c0 1.674.007 1.898.037 2.646.03.75.14 1.262.29 1.71.15.448.36.85.832 1.313.463.463.865.682 1.313.832.448.15.96.26 1.71.29.748.03.972.037 2.646.037s1.898-.007 2.646-.037c.75-.03 1.262-.14 1.71-.29a3.68 3.68 0 0 0 1.313-.832 3.68 3.68 0 0 0 .832-1.313c.15-.448.26-.96.29-1.71.03-.748.037-.972.037-2.646s-.007-1.898-.037-2.646c-.03-.75-.14-1.262-.29-1.71a3.68 3.68 0 0 0-.832-1.313A3.68 3.68 0 0 0 10.646 2.037c-.448-.15-.96-.26-1.71-.29C9.898 2.007 9.674 2 8 2zm0 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0 1a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm4.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>
